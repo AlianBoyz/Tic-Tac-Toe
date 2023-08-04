@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/cust"
+    tools:context=".AddPlayers">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER PLAYERS NAME"
+                android:textAlignment="center"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:textColor="@color/cust1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/playerOne"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:hint="Enter player one name"
+                android:drawableLeft="@drawable/ic_oicon"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:id="@+id/playerOne2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:drawableLeft="@drawable/ic_xicon"
+                android:drawablePadding="8dp"
+                android:hint="Enter player two name"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/startGameButton"
+                android:background="#FF8A65"
+                android:text="Start Game"
+                android:textSize="18sp"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
